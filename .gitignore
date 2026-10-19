@@ -20,3 +20,7 @@ frontend/coverage/
 # Local package-manager caches used during development
 .pnpm-home/
 .corepack/
+
+# Runtime and local logs
+*.log
+logs/

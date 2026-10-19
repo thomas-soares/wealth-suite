@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "dataset": "wealth-suite-demo",
+    "version": 1,
+    "synthetic": true,
+    "productionUse": false,
+    "generatedAt": "2026-01-15T12:00:00Z"
+  },
+  "assessors": [
+    {
+      "id": "assessor-ana-lima",
+      "name": "Ana Lima",
+      "email": "ana.lima@example.test"
+    }
+  ],
+  "clients": [
+    {
+      "id": "client-joao-mendes",
+      "assessorId": "assessor-ana-lima",
+      "name": "Joao Mendes",
+      "email": "joao.mendes@example.test",
+      "status": "active"
+    },
+    {
+      "id": "client-lucia-cardoso",
+      "assessorId": "assessor-ana-lima",
+      "name": "Lucia Cardoso",
+      "email": "lucia.cardoso@example.test",
+      "status": "onboarding"
+    }
+  ],
+  "objectives": [
+    {
+      "id": "objective-joao-retirement",
+      "clientId": "client-joao-mendes",
+      "title": "Build a long-term retirement reserve",
+      "status": "in-progress"
+    },
+    {
+      "id": "objective-lucia-liquidity",
+      "clientId": "client-lucia-cardoso",
+      "title": "Organize a six-month liquidity reserve",
+      "status": "draft"
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity-joao-next-review",
+      "clientId": "client-joao-mendes",
+      "authorId": "assessor-ana-lima",
+      "type": "meeting",
+      "title": "Quarterly review",
+      "visibility": "shared",
+      "occurredAt": "2026-02-10T14:00:00Z"
+    },
+    {
+      "id": "activity-joao-private-follow-up",
+      "clientId": "client-joao-mendes",
+      "authorId": "assessor-ana-lima",
+      "type": "note",
+      "title": "Internal follow-up reminder",
+      "visibility": "assessor-private",
+      "occurredAt": "2026-02-11T09:30:00Z"
+    }
+  ],
+  "sharing": [
+    {
+      "id": "share-joao-objective",
+      "clientId": "client-joao-mendes",
+      "resourceId": "objective-joao-retirement",
+      "resourceType": "objective",
+      "shared": true
+    },
+    {
+      "id": "share-joao-meeting",
+      "clientId": "client-joao-mendes",
+      "resourceId": "activity-joao-next-review",
+      "resourceType": "activity",
+      "shared": true
+    }
+  ]
+}
